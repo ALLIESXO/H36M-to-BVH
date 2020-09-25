@@ -6,14 +6,8 @@ import argparse
 import cdflib
 import os, sys, shutil
 
-def file_path(path):
-    if os.path.isfile(path):
-        return path
-    else:
-        raise argparse.ArgumentTypeError(f"readable_file:{path} is not a valid file.")
-
 parser = argparse.ArgumentParser(description="Translate cdf motion file to bvh file.")
-parser.add_argument("-pose", type=file_path, help="Path to the cdf pose file. (Must be 'D3 Angles' pose)")
+parser.add_argument("-pose", type="", help="Path to the cdf pose file. (Must be 'D3 Angles' pose)")
 parser.add_argument("-dest", default="", type=str, help="Saves the created file at the given path. (Default: bvh-file folder in script directory.)")
 args = parser.parse_args()
 use_dest = False
@@ -40,7 +34,7 @@ frames = len(angles)
 dst_dir = args.dest
 src_dir = os.getcwd()
 if not use_dest:
-    dst_dir = src_dir + "\\" + 'bvh-files'
+    dst_dir = os.path.join(src_dir, 'bvh-files')
 
 try: 
     os.mkdir(dst_dir) 

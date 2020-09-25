@@ -20,7 +20,7 @@ Param:  -dest <dir_path> : directory path for saving the bvh file.
 
 Example usage:
 ```python
-python .\H36M_BVH_mapper.py -pose "C:/Users/.../D3_Angles/Directions 1.cdf" -dest "C:/Path/to/dest/"
+python .\H36M_to_BVH.py -pose "C:/Users/.../D3_Angles/Directions 1.cdf" -dest "C:/Path/to/dest/"
 ```
 
 ## License
