@@ -46,7 +46,7 @@ ROOT Hips
 						{
 							OFFSET	 0.00	0.00	 0.00
                             CHANNELS 3 Zrotation Xrotation Yrotation
-                            END Site
+                            End Site
                             {
                                 OFFSET	 0.00	0.00	1.00000003353624
                             }
@@ -84,7 +84,7 @@ ROOT Hips
 						{
 							OFFSET	 0.00	0.00	 0.00
                             CHANNELS 3 Zrotation Xrotation Yrotation
-                            END Site
+                            End Site
                             {
                                 OFFSET	 0.00	0.00	0.999999735957563
                             }
