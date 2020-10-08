@@ -8,12 +8,12 @@ import os, sys, shutil
 from pathlib import Path
 
 """
-Converts all given files (either by given root folder where files are inside or absolute path of file)
-int .bvh files with the correct MOTION section.
+Converts all given files (either by given src dir where files are inside or absolute path of file)
+into .bvh files with the correct MOTION section.
 
 Input:
 argFile   - PathToFile (str)
-argFolder - PathToFolder (str)
+argFolder - PathToSource (str)
 argDest   - PathToDestinationFolder (str)
 """
 def convert(argFile, argFolder, argDest, skelScale=100):
@@ -131,9 +131,9 @@ def checkArguments(filePath, folder, dest):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Translate cdf motion (of Human36M dataset) file to bvh file.")
     parser.add_argument("-SkelScale", default=100 , help="Number to which the size of the skeleton is divided by.")
-    parser.add_argument("-file", default="", help="Path to the cdf pose file. (Must be 'D3 Angles' pose)")
-    parser.add_argument("-folder", default="", help="Path to the pose files folder. All files will be converted.")
+    parser.add_argument("-srcFile", default="", help="Path to the cdf pose file. (Must be 'D3 Angles' pose)")
+    parser.add_argument("-srcDir", default="", help="Path to the pose files folder. All files will be converted.")
     parser.add_argument("-dest", default="", type=str, help="Path where to store the converted files. (Default: Same directory as given cdf files.)")
     args = parser.parse_args()
-    convert(args.file, args.folder, args.dest, args.SkelScale)
+    convert(args.srcFile, args.srcDir, args.dest, args.SkelScale)
     print("Done converting.")
