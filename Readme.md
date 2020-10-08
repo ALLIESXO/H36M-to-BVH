@@ -15,13 +15,21 @@ pip install cdflib
 ## Usage
 
 Param:  -h or --help : for printing the help message.
-Param:  -pose <file_path> : file path to the cdf file of H36M D3 Angles. 
-Param:  -dest <dir_path> : directory path for saving the bvh file. 
+Param:  -SkelScale=XX : Number which to divide the distance of all joints (default is set to 100).
+Param:  -srcFile=PATH_TO_FILE : file path to the cdf file of H36M D3 Angles. 
+Param:  -srcDir=PATH_TO_DIR : directory where multiple cdf files are (H36M D3 Angles). 
+Param:  -dest=PATH_TO_DIR : directory path for saving the bvh file. 
 
 Example usage:
 ```python
 python .\H36M_to_BVH.py -pose "C:/Users/.../D3_Angles/Directions 1.cdf" -dest "C:/Path/to/dest/"
 ```
+
+## Blender Import Example
+After converting the cdf into bvh files, blender should be able to automatically load the file by using the import function.
+
+![](phoning.gif)
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
