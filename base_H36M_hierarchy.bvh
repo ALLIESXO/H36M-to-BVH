@@ -5,15 +5,15 @@ ROOT Hips
 	CHANNELS 6 Xposition Yposition Zposition Zrotation Xrotation Yrotation
 	JOINT Spine
 	{
-		OFFSET	 0.00	2.45913012437421	 0.00
+		OFFSET	 0.00	0.01	 0.00
 		CHANNELS 3 Zrotation Xrotation Yrotation
 		JOINT Spine1
 		{
-			OFFSET	 0.00	 2.48462964506057	 0.00
+			OFFSET	 0.00	 2.45913012437421	 0.00
 			CHANNELS 3 Zrotation Xrotation Yrotation
             JOINT Neck
             {
-                OFFSET	 0.00	 0.01	 0.00
+                OFFSET	 0.00	 2.48462964506057	 0.00
                 CHANNELS 3 Zrotation Xrotation Yrotation
                 JOINT Head
                 {
@@ -25,78 +25,78 @@ ROOT Hips
                     }
                 }
             }
-        }
-		JOINT LeftShoulder
-		{
-			OFFSET	 0.00	 2.48462964506057	 0.00
-			CHANNELS 3 Zrotation Xrotation Yrotation
-			JOINT LeftUpArm
+			JOINT LeftShoulder
 			{
-				OFFSET	 0.00	 1.24881979654096	 0.00
+				OFFSET	 0.00	 2.48462964506057	 0.00
 				CHANNELS 3 Zrotation Xrotation Yrotation
-				JOINT LeftForeArm
+				JOINT LeftUpArm
 				{
-					OFFSET	 0.00	2.59758046908119	 0.00
+					OFFSET	 0.00	 1.24881979654096	 0.00
 					CHANNELS 3 Zrotation Xrotation Yrotation
-					JOINT LeftHand
+					JOINT LeftForeArm
 					{
-						OFFSET	 0.00	2.45542024364365	 0.00
+						OFFSET	 0.00	2.59758046908119	 0.00
 						CHANNELS 3 Zrotation Xrotation Yrotation
-						JOINT LeftHandThumb 
+						JOINT LeftHand
 						{
-							OFFSET	 0.00	0.00	 0.00
-                            CHANNELS 3 Zrotation Xrotation Yrotation
-                            End Site
-                            {
-                                OFFSET	 0.00	0.00	1.00000003353624
-                            }
-						}
-                        JOINT L_Wrist_End 
-						{
-							OFFSET	 0.00	0.99999967115358	 0.00
-                            CHANNELS 3 Zrotation Xrotation Yrotation
-                            End Site 
-                            {
-                                OFFSET	 0.00	 0.00	 0.00
-                            }
+							OFFSET	 0.00	2.45542024364365	 0.00
+							CHANNELS 3 Zrotation Xrotation Yrotation
+							JOINT LeftHandThumb 
+							{
+								OFFSET	 0.00	0.00	 0.00
+								CHANNELS 3 Zrotation Xrotation Yrotation
+								End Site
+								{
+									OFFSET	 0.00	0.00	1.00000003353624
+								}
+							}
+							JOINT L_Wrist_End 
+							{
+								OFFSET	 0.00	0.99999967115358	 0.00
+								CHANNELS 3 Zrotation Xrotation Yrotation
+								End Site 
+								{
+									OFFSET	 0.00	 0.00	 0.00
+								}
+							}
 						}
 					}
 				}
 			}
-		}
-		JOINT RightShoulder
-		{
-			OFFSET	 0.00	 2.48462964506057	 0.00
-			CHANNELS 3 Zrotation Xrotation Yrotation
-			JOINT RightUpArm
+			JOINT RightShoulder
 			{
-				OFFSET	 0.00	 1.24881979654096	 0.00
+				OFFSET	 0.00	 2.48462964506057	 0.00
 				CHANNELS 3 Zrotation Xrotation Yrotation
-				JOINT RightForeArm
+				JOINT RightUpArm
 				{
-					OFFSET	 0.00	2.59758046908119	 0.00
+					OFFSET	 0.00	 1.24881979654096	 0.00
 					CHANNELS 3 Zrotation Xrotation Yrotation
-					JOINT RightHand
+					JOINT RightForeArm
 					{
-						OFFSET	 0.00	2.45542024364365	 0.00
+						OFFSET	 0.00	2.59758046908119	 0.00
 						CHANNELS 3 Zrotation Xrotation Yrotation
-						JOINT RightHandThumb 
+						JOINT RightHand
 						{
-							OFFSET	 0.00	0.00	 0.00
-                            CHANNELS 3 Zrotation Xrotation Yrotation
-                            End Site
-                            {
-                                OFFSET	 0.00	0.00	0.999999735957563
-                            }
-						}
-                        JOINT R_Wrist_End 
-						{
-							OFFSET	 0.00	1.37500030777855	 0.00
-                            CHANNELS 3 Zrotation Xrotation Yrotation
-                            End Site 
-                            {
-                                OFFSET	 0.00	 0.00	 0.00
-                            }
+							OFFSET	 0.00	2.45542024364365	 0.00
+							CHANNELS 3 Zrotation Xrotation Yrotation
+							JOINT RightHandThumb 
+							{
+								OFFSET	 0.00	0.00	 0.00
+								CHANNELS 3 Zrotation Xrotation Yrotation
+								End Site
+								{
+									OFFSET	 0.00	0.00	1.00000003353624
+								}
+							}
+							JOINT R_Wrist_End 
+							{
+								OFFSET	 0.00	0.99999967115358	 0.00
+								CHANNELS 3 Zrotation Xrotation Yrotation
+								End Site 
+								{
+									OFFSET	 0.00	 0.00	 0.00
+								}
+							}
 						}
 					}
 				}
